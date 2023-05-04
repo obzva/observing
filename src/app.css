@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+p,
+small,
+b,
+a {
+	font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+	font-weight: 1000;
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+h2 {
+	font-weight: 900;
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+h3 {
+	font-weight: 800;
+	font-family: 'Roboto Flex', sans-serif;
+}
+
+#body.light {
+	background-color: #f2f8ff;
+	color: #313135;
+	transition: all 0.3s ease-out;
+}
+
+#body.dark {
+	background-color: #1a2636;
+	color: #ffffff;
+	transition: all 0.3s ease-out;
+}
+
+small.light {
+	color: #455a64;
+}
+
+small.dark {
+	color: #c6dde9;
+}
+
+a.light,
+a.light:visited {
+	color: #0047b0;
+}
+
+a.dark,
+a.dark:visited {
+	color: #005ecc;
+}
