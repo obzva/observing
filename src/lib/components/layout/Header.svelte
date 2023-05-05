@@ -3,7 +3,6 @@
 	import ThemeButton from './ThemeButton.svelte';
 
 	let isLight;
-	let src = '/profile-image.png';
 
 	theme.subscribe((v) => {
 		isLight = v;
@@ -20,7 +19,7 @@
 </header>
 <aside class={isLight ? 'light' : 'dark'}>
 	<div id="profile-wrapper">
-		<img {src} alt="half-finished-portrait-of-Freud" />
+		<img src="/profile-image.png" alt="half-finished-portrait-of-Freud" />
 		<div>
 			<p>
 				Personal blog by <a
