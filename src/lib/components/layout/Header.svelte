@@ -1,5 +1,6 @@
 <script>
 	import { theme } from '../../../stores';
+	import ThemeButton from './ThemeButton.svelte';
 
 	let isLight;
 
@@ -14,7 +15,7 @@
 
 <header class={isLight ? 'light' : 'dark'}>
 	<h1>Observing...</h1>
-	<button on:click={handleButtonClick}>{isLight ? 'light' : 'dark'}</button>
+	<ThemeButton on:click={handleButtonClick} isLight={isLight}/>
 </header>
 <aside class={isLight ? 'light' : 'dark'}>
 	<div id="profile-wrapper">

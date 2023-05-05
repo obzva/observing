@@ -42,18 +42,22 @@ h3 {
 
 small.light {
 	color: #455a64;
+	transition: all 0.3s ease-out;
 }
 
 small.dark {
 	color: #c6dde9;
+	transition: all 0.3s ease-out;
 }
 
 a.light,
 a.light:visited {
 	color: #0047b0;
+	transition: all 0.3s ease-out;
 }
 
 a.dark,
 a.dark:visited {
-	color: #005ecc;
+	color: #2e8fff;
+	transition: all 0.3s ease-out;
 }

@@ -1,3 +1,4 @@
 import { writable } from 'svelte/store';
 
-export const theme = writable(false);
+const currentHour = new Date().getHours();
+export const theme = writable(currentHour >= 6 && currentHour < 19);
