@@ -1,2 +1,2 @@
-#obzva.github.io
+# obzva.github.io
 My personal blog. Built with Svelte.
