@@ -3,6 +3,7 @@
 	import ThemeButton from './ThemeButton.svelte';
 
 	let isLight;
+	let src = '/profile-image.png';
 
 	theme.subscribe((v) => {
 		isLight = v;
@@ -15,15 +16,16 @@
 
 <header class={isLight ? 'light' : 'dark'}>
 	<h1>Observing...</h1>
-	<ThemeButton on:click={handleButtonClick} isLight={isLight}/>
+	<ThemeButton on:click={handleButtonClick} {isLight} />
 </header>
 <aside class={isLight ? 'light' : 'dark'}>
 	<div id="profile-wrapper">
-		<div id="profile-image" />
+		<img {src} alt="half-finished-portrait-of-Freud" />
 		<div>
 			<p>
-				Personal blog by <a href="https://www.linkedin.com/in/dongyeong-chon-05b840248/" class={isLight ? 'light' : 'dark'}
-					>Dongyeong Chon</a
+				Personal blog by <a
+					href="https://www.linkedin.com/in/dongyeong-chon-05b840248/"
+					class={isLight ? 'light' : 'dark'}>Dongyeong Chon</a
 				>.
 			</p>
 			<p>I share what I observed.</p>
@@ -44,17 +46,16 @@
 	p {
 		margin: 0;
 	}
-	#profile-wrapper {
-		display: flex;
-		align-items: center;
-		margin-bottom: 2.5rem;
-	}
-	#profile-image {
+	img {
 		margin-right: 0.875rem;
 		margin-bottom: 0;
 		width: 3.5rem;
 		height: 3.5rem;
 		border-radius: 50%;
-		background-color: #005ecc;
+	}
+	#profile-wrapper {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2.5rem;
 	}
 </style>
