@@ -1,8 +1,9 @@
-# obzva.github.io
+# observing.vercel.app
 My personal blog. Built with Svelte.
 
 ## Todos
 - improve light/dark theme mode
   - using ssr and so on ...
 - OG setting
-- Build markdown blogging system
+- buy personal domain
+- build server with Deno from scratch
